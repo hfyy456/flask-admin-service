@@ -1,0 +1,17 @@
+certifi==2019.11.28
+chardet==3.0.4
+Click==7.0
+Flask==1.1.1
+Flask-Cors==3.0.8
+idna==2.8
+itsdangerous==1.1.0
+Jinja2==2.10.3
+MarkupSafe==1.1.1
+PyJWT==1.7.1
+pymango==0.1.1
+pymongo==3.10.1
+qiniu==7.2.6
+requests==2.22.0
+six==1.13.0
+urllib3==1.25.7
+Werkzeug==0.16.0

@@ -1,0 +1,12 @@
+#数据库
+#mongoUrl='www.izhaoo.com'
+mongoUrl='101.132.154.213'
+mongoPort=27017
+dbname='sfqp'
+#密钥
+SECRET_KEY='b9L8dqND3zXyrKZS'
+#七牛
+AccessKey='_Zrb5w4L33wU0gG_cz6RNPP4i2Mf9iWeuHzKIfAz'
+SecretKey='9ndwW_OVsaFCIPc2Rf2O0NlM04XD6HdGsmYGU2z9'
+BucketName='sfqp'
+root='http://q42ubsy7o.bkt.clouddn.com/'
