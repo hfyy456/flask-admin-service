@@ -1,0 +1,25 @@
+from flask import Flask
+from flask_socketio import SocketIO,join_room, leave_room,emit,Namespace
+app = Flask(__name__)
+socketio = SocketIO(app,cors_allowed_origins="*")
+class ChatRoom(Namespace):
+    def on_connect(self):
+        emit('connect', {'data': 'Connected'})
+    def on_join(self,data):
+        print(data)
+        username=data['data']['username']
+        room = data['data']['room']
+        join_room(room)
+        emit('recive_msg',username + ' has entered the room.', room=room)
+    def on_leave(self,data):
+        print(data)
+        username=data['data']['username']
+        room = data['data']['room']
+        leave_room(room)
+        emit('recive_msg',username + ' has leave the room.', room=room)
+
+socketio.on_namespace(ChatRoom('/test'))
+   
+if __name__ == '__main__':
+    socketio.run(app, host='0.0.0.0', debug=True)
+
