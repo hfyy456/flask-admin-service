@@ -7,7 +7,7 @@ idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
-PyJWT==1.7.1
+PyJWT==2.4.0
 pymango==0.1.1
 pymongo==3.10.1
 qiniu==7.2.6
